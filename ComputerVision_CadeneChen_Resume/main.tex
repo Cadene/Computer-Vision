@@ -1,0 +1,154 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english, french]{babel}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage[affil-it]{authblk} %affil
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{biblatex}
+%\usepackage[framed,autolinebreaks,useliterate]{mcode}
+
+%\usepackage[procnames]{listings}
+%\usepackage{color}
+
+% Settings des annotations ---------------------------------------------------------------
+%\usepackage[disable]{todonotes} 									% notes not showed
+\usepackage[draft]{todonotes}   									% notes showed
+
+% \newcommand{\comment}[2]{#1}   									% comment not showed
+\newcommand{\comment}[2]{\underline{#1}{\bfseries \color{blue}#2}}	% comment showed
+% ----------------------------------------------------------------------------------------
+
+
+\definecolor{keywords}{RGB}{255,0,90}
+\definecolor{comments}{RGB}{0,0,113}
+\definecolor{red}{RGB}{160,0,0}
+\definecolor{green}{RGB}{0,150,0}
+
+\makeatletter
+\let\ps@plain=\ps@empty % Pas de numéro de page sur la première page des chapitres
+\makeatother
+
+\hypersetup{pdfstartview=Fit,hidelinks=true} % Paramètres du PDF et des liens hypertexte (package hyperref)
+ 
+\usepackage[left=1.2in, right=1.2in, top=1.2in, bottom=1.2in]{geometry}
+ 
+\bibliography{bib.bib}
+ 
+\begin{document}
+
+\title{Exposé d'Insertion Professionnelle \\ Apprentissage et vision artificielle}
+
+\author{Rémi Cadène, Mickael Chen \\ 
+Encadré par Aurélie Beynier \\
+Université Pierre et Marie Curie (UPMC) \\
+Master Données, Apprentissage et Connaissances (DAC)}
+
+
+\date{\today}
+
+\maketitle
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\begin{abstract}
+Cet exposé a pour objectif de donner une vue d'ensemble de la recherche en vision artificielle, en mettant en avant tout au long de ce travail ses liens avec l'apprentissage automatique.
+Nous introduisons le domaine par ses problématiques, son historique et ses succès industriels, ainsi que des projets de recherches en cours d'industrialisation et des travaux de recherche parus récemment. De plus, nous abordons la réalité physique du domaine en présentant les laboratoires publics les plus influents en France et dans le monde ainsi que les liens qui existent avec la recherche privée et le monde industriel.
+\end{abstract}
+
+%-------------------------------------------------%
+%-------------------------------------------------%
+\section{Introduction}
+%-------------------------------------------------%
+%-------------------------------------------------%
+
+La vision artificielle ou \textit{computer vision} est une discipline scientifique qui vise à créer des systèmes capables d'acquérir de l'information à partir d'images de façon autonome. Issue de l'intelligence artificielle et des neurosciences cognitives dans les années 60, elle partage dès lors un lien étroit avec d'autres branches de l'intelligence artificielle.
+En effet, les progrès rapides qu'ont connus les techniques d'apprentissage automatique ces deux dernières décennies ont permis à la vision par ordinateur un certain nombre de succès industriels, comme par exemple les moteurs de recherche d'images, la détection des visages et la reconnaissance faciale. En retour, ces succès consolident le domaine de l'apprentissage automatique. Si les méthodes d'apprentissage profond ou \textit{deep learning} font aujourd'hui l'état de l'art dans le domaine de la vision par ordinateur, on peut aussi dire que réciproquement, la vision est l'application phare des techniques de \textit{deep learning} et en est le principal contributeur.
+En outre, l'industrialisation de ces méthodes est un enjeu crucial pour les prochaines années et de nombreuses entreprises rachètent ou financent des laboratoires de recherches fondamentales en vision artificielle à l'instar de Google Deep Mind (Londres) et Facebook AI (Paris).
+Dans cet exposé nous présenterons dans une première partie l'historique de la vision artificielle en mettant en avant ses liens avec l'apprentissage automatique, mais aussi en mentionnant des applications industrielles résultants des processus de recherche. Puis, dans une deuxième partie, nous présenterons brièvement les thèmes de recherche actuels et introduirons les laboratoires de recherche publique en France et à l'étranger, et enfin la recherche privée.
+
+\subsection{Définition}
+\subsection{Problématiques}
+
+%------------------------------------------------
+%------------------------------------------------
+\section{Historique de la vision artificielle}
+\subsection{Du point de vue des méthodes employés}
+\subsection{Du point de vue des conférences}
+
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+\section{Travaux en recherche et applications dans l'industrie}
+\subsection{Applications existantes}
+\subsection{Projets en cours d'industrialisation}
+\subsection{Travaux de recherche récents}
+
+\section{Laboratoires en France et à l'étranger}
+\subsection{Laboratoires publics influents en France}
+\subsection{Laboratoires publics influents dans le monde}
+\subsection{La recherche privée}
+
+\newpage
+
+%------------------------------------------------
+\section{Conclusion}
+%------------------------------------------------
+
+Dans cet exposé, nous avons présenté la vision artificielle comme une discipline scientifique vaste et intrinsèquement lié à l'apprentissage artificiel.
+Dans une première partie nous avons retracé l'historique des recherches et abordé les enjeux industriels qui en résultent.
+La seconde partie s'intéresse aux différents laboratoires et à leur positionnement aussi bien scientifique que géographique. Nous avons notamment mis en évidence les liens étroits entre les grands laboratoires publics et la recherche privée.
+
+Aujourd'hui, les algorithmes de vision sont utilisés dans de nombreux appareils grand public. De plus, les entreprises leaders dans le domaine sont capables de mettre en production les résultats de recherche en une année à peine.
+Compte tenu de l'essor de la recherche et de la rapidité de pénétration de ces nouvelles technologies dans la société, le domaine semble à présent se trouver aux prémices d'une possible révolution sociétale dont les GoogleCar en seraient les précurseurs.
+
+% sources
+
+\nocite{Karpathy}
+% http://karpathy.github.io/2012/10/22/state-of-computer-vision/
+
+\nocite{karpathy2014deep}
+% http://cs.stanford.edu/people/karpathy/deepimagesent/
+
+\nocite{Gavves}
+% http://www.egavves.com/a-brief-history-of-computer-vision/#sthash.zbY6gYMO.dpbs
+
+\nocite{ICML}
+% https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning
+
+\nocite{Hays}
+% https://cs.brown.edu/courses/cs143/lectures/01.pdf
+
+\nocite{Huang}
+% https://cds.cern.ch/record/400313/files/p21.pdf
+
+\nocite{Hoiem}
+% http://dhoiem.cs.illinois.edu/courses/vision_spring10/lectures/Lecture1%20-%20Introduction.pdf
+
+\nocite{Tesla}
+% http://www.teslamotors.com/blog
+
+\nocite{jaderberg2015}
+
+%\bibliographystyle{plain}
+%\bibliography{bibtex}
+\printbibliography
+
+\newpage
+
+
+
+\end{document}
